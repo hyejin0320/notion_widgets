@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: fit-content;
+            text-align: center;
+        }
+
+        #table_section{
+            text-align: center;
+        }
+
+        .table_style{
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .table_style td{
+            height: 24px;
+            width: 24px;
+        }
+
+        .table_style td:nth-child(-n+2){
+            color: #fff;
+            background-color: rgb(255, 158, 134);
+        }
+
+        .table_style td:nth-last-child(1){
+            color: #fff;
+            background-color: rgb(255, 158, 134);
+        }
+
+        .table_style td:nth-child(n+6):nth-child(-n+8){
+            color: #fff;
+            background-color: rgb(61, 207, 195);
+        }
+
+        #legend_section{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .legend_content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .legend_item{
+            display: flex;
+            align-items: center;
+        }
+
+        .legend_item:not(:last-child){
+            margin-right: 10px;
+        }
+
+        .legend_item p{
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .legend_item span{
+            display: inline-block;
+            border-radius: 4px;
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+        }
+
+        .legend_item:nth-child(1) span{
+            background-color: rgb(255, 158, 134);
+        }
+
+        .legend_item:nth-child(2) span{
+            background-color: rgb(61, 207, 195);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="table_section">
+            <table class="table_style">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </table>
+            <div id="legend_section">
+                <div class="legend_content">
+                    <div class="legend_item">
+                        <span></span>
+                        <p>성수기</p>
+                    </div>
+                    <div class="legend_item">
+                        <span></span>
+                        <p>비수기</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
